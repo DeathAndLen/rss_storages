@@ -27,6 +27,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)bbci\.co\.uk$/.test(host)) return "+proxy";
         if (/(?:^|\.)ftchinese\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)feedx\.net$/.test(host)) return "+proxy";
+        if (/(?:^|\.)hket\.com$/.test(host)) return "+proxy";
         return "DIRECT";
     },
     "+proxy": function(url, host, scheme) {
